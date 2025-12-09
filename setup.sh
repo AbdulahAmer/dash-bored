@@ -17,5 +17,6 @@ echo "Installing requirements..."
 pip install --upgrade pip
 pip install -r requirements.txt
 
-echo "Starting Dash app..."
+echo "Starting Dash app and opening http://127.0.0.1:8050 ..."
+python -m webbrowser http://127.0.0.1:8050 >/dev/null 2>&1 &
 python app.py

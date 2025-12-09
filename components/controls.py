@@ -57,6 +57,9 @@ def chart_type_radio(id="chart-type", value="histogram"):
             {"label": "Histogram", "value": "histogram"},
             {"label": "Bar", "value": "bar"},
             {"label": "Scatter", "value": "scatter"},
+            {"label": "Line", "value": "line"},
+            {"label": "Area", "value": "area"},
+            {"label": "Box", "value": "box"},
         ],
         value=value,
         inline=True,
@@ -70,4 +73,17 @@ def axis_dropdown(id, options=None, value=None, placeholder="Select column"):
         value=value,
         placeholder=placeholder,
         clearable=True,
+    )
+
+
+def color_picker(id="color-picker", value="#4C78A8"):
+    return dcc.Input(id=id, type="color", value=value, debounce=True, style={"width": "100%"})
+
+
+def comparison_toggle(id="comparison-toggle"):
+    return dcc.Checklist(
+        id=id,
+        options=[{"label": "Add comparison view", "value": "enabled"}],
+        value=[],
+        inline=True,
     )

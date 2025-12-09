@@ -190,4 +190,4 @@ def update_example_content(selected_dataset, view_type, chart_type, x_value, y_v
 
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run(debug=True)

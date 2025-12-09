@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#app-root.theme-light {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+#app-root.theme-dark {
+  background-color: #1e1e2f;
+  color: #f1f3f5;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.controls-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.control-card {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#app-root.theme-dark .control-card {
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.upload-box {
+  border: 2px dashed #888;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+#app-root.theme-dark .upload-box {
+  background-color: rgba(0, 0, 0, 0.35);
+  border-color: #bbb;
+}
+
+.status-text {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.summary-card {
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+}
+
+#app-root.theme-dark .summary-card {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.footer-note {
+  margin-top: 16px;
+  font-size: 13px;
+  opacity: 0.85;
+}
